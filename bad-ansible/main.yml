@@ -1,0 +1,16 @@
+---
+- hosts: frontends
+  roles:
+  - common
+  - frontends
+
+- hosts: apps
+  roles:
+  - common
+  - apps
+
+- hosts: appdbs
+  roles:
+  - common
+  - appdbs
+...

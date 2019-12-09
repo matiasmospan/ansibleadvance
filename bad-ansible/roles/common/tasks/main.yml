@@ -1,0 +1,6 @@
+---
+  - name: enable_3_tier_repos
+    copy: src=./open_three-tier-app.repo dest=/etc/yum.repos.d/open_three-tier-app.repo owner=root group=root mode=0644
+  - name: configuration
+    gather_facts: false # remove later! speeds up testing
+    become: true
