@@ -1,5 +1,2 @@
-handlers:
-  - name: start haproxy
-    service:
-      name: haproxy
-      state: started
+---
+# handlers file for frontends
